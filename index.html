@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXChMoney</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   
+</head>
+
+<body>
+    <div class="container">
+        <!-- Dollor -->
+        <div  class="header">
+            <h1>Valyita konvertor</h1>
+            <a href="charts.html">Chartni ko'rish</a>
+        </div>
+        <div class="convertor-card dollor">
+           
+           
+            <div class="base">
+                <div class="custom-select">
+                    <div class="mask" id="selected">Valyitani tanlang <i class="fas fa-angle-down"></i></i></div>
+                    <div class="options">
+                        <label>
+                            <input type="radio" name="name" value="USD" data-name='AQSH dollor' data-symbol="$">
+                            AQSH dollor
+                        </label>
+                        <label>
+                            <input type="radio" name="name" data-name="Yevro" value="EUR" data-symbol="€">
+                            Yevro
+                        </label>
+                        <label>
+                            <input type="radio" name="name" data-name="Rossiya rubl" value="RUB" data-symbol="₽">
+                            Rossiya rubl
+                        </label>
+                        <label>
+                            <input type="radio" name="name" data-name="Xitoy yuan" value="CNY" data-symbol="¥">
+                            Xitoy yuan
+                        </label>
+                        <label>
+                            <input type="radio" name="name" data-name="Koreya won" value="KRW" data-symbol="₩">
+                            Koreya won
+                        </label>
+                        <label>
+                            <input type="radio" name="name" data-name="Yapon yen" value="JPY" data-symbol="¥">
+                            Yapon yen
+                        </label>
+                    </div>
+                </div>
+                <div class="value-section">
+                    <input type="number" class="value inputNumber" placeholder="0">
+                    <span class="symbol">&nbsp;&nbsp;</span>
+                </div>
+                <span class="abbr">USD</span>
+            </div>
+            <div class="converted">
+                <span class="abbr">SO'M</span>
+                <div class="value-section">
+                    <input type="number" class="value outputValue" placeholder="0" readonly>
+                    <span class="symbol">S</span>
+                </div>
+                <div class="menu out">
+                    <span name='usdOut' class="name">O'zbek So'mi</span>
+                </div>
+            </div>
+        </div>
+        <h2 class="footer">Developed by Kuvondikoff || Beta version 1.0</h2>
+    </div>
+    <div class="loader-container">
+        <div class='loader loader3'>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

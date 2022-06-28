@@ -86,7 +86,6 @@ async function mainConvertor() {
       deleteLoader();
     })
     .catch((e) => {
-      console.log(e);
       document.body.innerHTML =
         "<h3 style='text-align:center; font-size:30px;'>Xatolik yuz berdi!!! <br> Iltimos sahifani yangilang</h3>";
     });
@@ -131,9 +130,6 @@ kiruvchiSon.addEventListener("keyup", (e) => {
       data.quotes.USDJPY
     ).toFixed(2);
   }
-
-  // if()
-  console.log(chiquvchiSon.length);
 
   if (kiruvchiSon.value == "") chiquvchiSon.value = "";
   chiquvchiSon.placeholder = "0";

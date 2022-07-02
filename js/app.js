@@ -83,6 +83,7 @@ async function mainConvertor() {
     .then((response) => response.json())
     .then((exchange) => {
       data = exchange;
+      // console.log(data);
       deleteLoader();
     })
     .catch((e) => {
